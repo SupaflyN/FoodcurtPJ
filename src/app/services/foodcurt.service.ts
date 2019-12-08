@@ -7,7 +7,7 @@ import { Foodcurt } from '../foodcurt';
 })
 export class FoodcurtService {
 
-  private dbPath = '/foodcurt';
+  private dbPath = '/foodcurt/6nDfbdRirA8zB7SpfHVG';
 
   foodcurtRef: AngularFireList<Foodcurt> = null;
 

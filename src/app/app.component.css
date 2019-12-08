@@ -1,4 +1,16 @@
-.body {
-    width: 800px;
-    margin: 0 auto;
+body {
+    background-image: url(https://wallpaperplay.com/walls/full/e/b/7/129745.jpg);
+  }
+
+.jumbotron {
+
+    margin-top: 5px;
+
+    
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
 }

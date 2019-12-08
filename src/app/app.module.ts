@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,9 @@ import { FormsModule } from '@angular/forms';
 
 
 
-
+const appRoutes: Routes = [
+  {path: 'home', component: HomeComponent} //หน้าแรก
+];
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes) 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,42 +1,54 @@
 <html>
    <body>
-      <div class="row">
-         
-            <div *ngFor="let foodcurt of foodcurt$ | async" class="col-md-3 mx-auto my-5">
-                <a [routerLink]=""><img class="card-img-top" src="https://media.thestar.com.my/Prod/0FB7C9A1-2C9B-4AA6-B0F2-607FD76E411D" alt="Card image cap"></a>
-                <div class="card-block">
-                     {{foodcurt.name}}<br>
-                     {{foodcurt.description}}<br>
-                     <button  color="primary">ควยกด</button>
+    
+
+
+      <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+              <a class="navbar-brand" href="#">SSRU Foodcurt</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">หน้าหลัก<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">โรงอาหาร</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">เมนูยอดฮิต</a>
+    
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">แผนที่</a>
+                  </li>
+                </ul>
+    
+              </div>
+            </nav>
+     
+            <div class="jumbotron" > 
+            <div class="col-sm-12">
+            <div class="row">
+            <div *ngFor="let foodcurt of foodcurt$ | async "  class="card" style="width: 18rem;" >
+                <img src= "{{foodcurt.ImagePath}} "class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{foodcurt.name}}</h5>
+                  <p class="card-text"> {{foodcurt.description}}</p>
+                  <button routerLink = "{{foodcurt.linkz}}" class="btn btn-secondary btn-block">GOGO</button>
                 </div>
-            </div>
-        </div>
-        
-        <div class="col-sm-8">
-        <div class="row">
-        <div *ngFor="let foodcurt of foodcurt$ | async" class="card" style="width: 18rem;" >
-            <img src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{foodcurt.name}}</h5>
-              <p class="card-text">{{foodcurt.description}}</p>
-              <a href="#" class="btn btn-primary">กดดูรายละเอียด</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+     </div>
 
-    <table>
-         <thead>
-         <th>ร้านชื่อ</th>
-         <th>รายละเอียด</th>
-         </thead>
-         <tbody>
-         <tr *ngFor="let foodcurt of foodcurt$ | async">
-         <td>{{foodcurt.name}}</td>
-         <td>{{foodcurt.description}}</td>
-         </tr>
-         </tbody>
-         </table>
+            
+
+                <router-outlet></router-outlet>
       </body>
          </html>
 <!--
