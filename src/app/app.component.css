@@ -1,9 +1,10 @@
 body {
     background-image: url(https://wallpaperplay.com/walls/full/e/b/7/129745.jpg);
+    height: 4500px;
   }
 
 .jumbotron {
-
+    height: 3500px;
     margin-top: 5px;
 
     
@@ -13,4 +14,18 @@ body {
     margin: 0 auto; /* Added */
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
+}
+
+
+.logo {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#menu {
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    text-align: center;
 }
