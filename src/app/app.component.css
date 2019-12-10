@@ -1,6 +1,10 @@
 body {
-    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-blackboard-food-hand-painted-poster-image_26234.jpg);
-    height: 4500px;
+    background-image: url(https://media.discordapp.net/attachments/563331155064127490/653958907332526129/unknown.png); 
+    height: 3500px;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
   }
 
 

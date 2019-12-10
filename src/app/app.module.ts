@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -21,6 +20,9 @@ import { Food8Component } from './food8/food8.component';
 import { Food9Component } from './food9/food9.component';
 import { Food10Component } from './food10/food10.component';
 import { FoodcurtComponent } from './foodcurt/foodcurt.component';
+import { HowtoComponent } from './howto/howto.component';
+import { ContactComponent } from './contact/contact.component';
+import { MapComponent } from './map/map.component';
 
 
 
@@ -36,7 +38,10 @@ const appRoutes: Routes = [
   {path: 'food7' , component: Food7Component},
   {path: 'food8' , component: Food8Component},
   {path: 'food9' , component: Food9Component},
-  {path: 'food10' , component: Food10Component}
+  {path: 'food10' , component: Food10Component},
+  {path: 'howto' , component: HowtoComponent},
+  {path: 'contact' , component: ContactComponent},
+  {path: 'map' , component: MapComponent}
   
 ];
 
@@ -54,7 +59,10 @@ const appRoutes: Routes = [
     Food8Component,
     Food9Component,
     Food10Component,
-    FoodcurtComponent
+    FoodcurtComponent,
+    HowtoComponent,
+    ContactComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

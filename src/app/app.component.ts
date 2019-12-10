@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Foodcurt } from './foodcurt'
-import { FoodcurtService } from './services/foodcurt.service';
-import { AngularFireDatabase, AngularFireObject } from 'angularfire2/database';
 import {AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument} from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 

@@ -1,0 +1,12 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.colorbg {
+     background-color: rgb(116, 116, 116);
+}
+.textcolor {
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,25 @@
+<html>
+
+ <div class="jumbotron" class="colorbg" > 
+<div *ngFor="let howto of howto$ | async">
+<div class = "textcolor">
+    <br>
+<B><h1 style="text-align: center;" >วิธีการใช้งาน โรงอาหาร</h1></B>
+<br>
+<img src="{{howto.ImagePath[0]}}" class = "center" height= "350" width="600" >
+<br>
+<p style="text-align: center;">{{howto.description[0]}}</p>
+<br>
+<img src="{{howto.ImagePath[1]}}" class = "center" height= "350" width="600" >
+<br>
+<p style="text-align: center;">{{howto.description[1]}}</p>
+<br>
+<img src="{{howto.ImagePath[2]}}" class = "center" height= "350" width="600" >
+<br>
+<p style="text-align: center;">{{howto.description[2]}}</p>
+<br>
+
+</div>
+</div>
+</div>
+</html>
