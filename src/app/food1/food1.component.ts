@@ -10,6 +10,7 @@ import { Foodcurt } from '../foodcurt';
 })
 export class Food1Component implements OnInit {
 
+ 
    
   foodcurtRef: AngularFirestoreCollection<Foodcurt>;
   foodcurt$: Observable<Foodcurt[]>;
@@ -21,6 +22,8 @@ constructor(private afs: AngularFirestore) {
   this.foodcurtRef = this.afs.collection('foodcurt/f001/menu'); // a ref to the todos collection
   this.foodcurt$ = this.foodcurtRef.valueChanges();
   
+ 
+
   }
   ngOnInit() {
     throw new Error("Method not implemented.");

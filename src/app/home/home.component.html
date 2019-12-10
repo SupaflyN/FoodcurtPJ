@@ -1,36 +1,12 @@
-<html>
-<body>
 
-        <table *ngFor="let foodcurt of foodcurt$ | async" class="table table-striped table-dark">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">อาหาร</th>
-                    <th scope="col">ราคา</th>
-               
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td class="text">{{foodcurt.namefood[1]}}</td>
-                    <td>{{foodcurt.pricefood[1]}}</td>
-              
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>{{foodcurt.namefood[2]}}</td>
-                    <td>{{foodcurt.pricefood[2]}}</td>
-               
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>{{foodcurt.namefood[3]}}</td>
-                    <td>{{foodcurt.pricefood[3]}}</td>
-                   
-                  </tr>
-                </tbody>
-              </table>
+<!--
+   
+<div class="container">
+<ul>
+      <li *ngFor="let foodcurt of foodcurt$ | async">
 
-</body>
-</html>
+         <h3>ร้าน</h3>  {{foodcurt.name}} <br> <h3>Description</h3> {{foodcurt.description}}   
+    </li>
+ </ul>
+
+</div> -->

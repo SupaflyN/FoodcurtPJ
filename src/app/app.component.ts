@@ -19,7 +19,6 @@ import { Observable } from 'rxjs';
 export class AppComponent {
 
 
-    
  // foodcurtRef: AngularFirestoreDocument<Foodcurt>;
 
   foodcurtRef: AngularFirestoreCollection<Foodcurt>;
@@ -33,5 +32,5 @@ constructor(private afs: AngularFirestore) {
   this.foodcurt$ = this.foodcurtRef.valueChanges();
  
 }
-
+  
 }

@@ -1,14 +1,8 @@
 body {
-    background-image: url(https://wallpaperplay.com/walls/full/e/b/7/129745.jpg);
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-blackboard-food-hand-painted-poster-image_26234.jpg);
     height: 4500px;
   }
 
-.jumbotron {
-    height: 3500px;
-    margin-top: 5px;
-
-    
-}
 
 .card {
     margin: 0 auto; /* Added */
@@ -22,10 +16,4 @@ body {
     margin-left: 10px;
 }
 
-#menu {
-    position: absolute;
-    width: 100px;
-    left: 50%;
-    margin-left: -50px;
-    text-align: center;
-}
+

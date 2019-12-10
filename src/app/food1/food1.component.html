@@ -1,13 +1,19 @@
 
+
+
+
+<div class="my-3 p-3 bg-white rounded shadow-sm">
 <div *ngFor="let foodcurt of foodcurt$ | async" >
 <h1 class="text" style="text-align: center;">{{foodcurt.name}} </h1>
+<hr>
 <p  style="text-align: center;"> {{foodcurt.description}}</p>
 <img src= "{{foodcurt.ImagePath}} "class="center" width="600" height="300"  alt="...">
 
-<table class="table table-striped table-dark">
-        <thead>
+<table class="table ">
+    <thead class="thead-dark">
+      
           <tr>
-            <th scope="col">#</th>
+            <th scope="col"></th>
             <th scope="col">อาหาร</th>
             <th scope="col">ราคา</th>
        
@@ -31,5 +37,5 @@
           </tr>
         </tbody>
       </table>
-
+</div>
 </div>

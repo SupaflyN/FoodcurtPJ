@@ -3,4 +3,5 @@ export class Foodcurt {
     description: string;
     link: string;
     ImagePath: string;
+    food: string;
 }
