@@ -12,7 +12,7 @@ export const environment = {
     storageBucket: "foodcourtssru.appspot.com",
     messagingSenderId: "318630535973",
     appId: "1:318630535973:web:9ac9cdfd31ee728e9430cc"
-  }
+   }
   };
 
 

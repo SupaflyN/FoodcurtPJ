@@ -27,6 +27,9 @@ import { HistoryComponent } from './history/history.component';
 //Firebase
 import { AngularFireModule} from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+
+
+
 import { Food11Component } from './food11/food11.component';
 import { Food12Component } from './food12/food12.component';
 import { Food13Component } from './food13/food13.component';

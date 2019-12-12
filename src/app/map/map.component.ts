@@ -22,7 +22,6 @@ constructor(private afs: AngularFirestore) {
 
  this.foodcurtRef = this.afs.collection('foodcurt'); // a ref to the todos collection
  this.foodcurt$ = this.foodcurtRef.valueChanges();
-
 }
 
 ngOnInit() {
