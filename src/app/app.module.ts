@@ -28,6 +28,8 @@ import { HistoryComponent } from './history/history.component';
 import { AngularFireModule} from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { Food11Component } from './food11/food11.component';
+import { Food12Component } from './food12/food12.component';
+import { Food13Component } from './food13/food13.component';
 
 
 const appRoutes: Routes = [
@@ -43,6 +45,9 @@ const appRoutes: Routes = [
   {path: 'food8' , component: Food8Component},
   {path: 'food9' , component: Food9Component},
   {path: 'food10' , component: Food10Component},
+  {path: 'food11' , component: Food10Component},
+  {path: 'food12' , component: Food10Component},
+  {path: 'food13' , component: Food10Component},
   {path: 'howto' , component: HowtoComponent},
   {path: 'contact' , component: ContactComponent},
   {path: 'map' , component: MapComponent},
@@ -70,7 +75,9 @@ const appRoutes: Routes = [
     ContactComponent,
     MapComponent,
     HistoryComponent,
-    Food11Component
+    Food11Component,
+    Food12Component,
+    Food13Component
   ],
   imports: [
     BrowserModule,

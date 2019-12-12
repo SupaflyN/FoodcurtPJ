@@ -24,9 +24,9 @@ constructor(private afs: AngularFirestore) {
   
  
 
-  }
-  ngOnInit() {
-    throw new Error("Method not implemented.");
-  }
+}
+ngOnInit() {
+  
+}
 
 }
