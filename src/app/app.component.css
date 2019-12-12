@@ -1,6 +1,6 @@
 body {
     background-image: url(https://firebasestorage.googleapis.com/v0/b/foodcourtssru.appspot.com/o/img%2Fwallpaper.jpg?alt=media&token=239f1def-a2c5-4805-b1e9-e43faefc544c); 
-    height: 3500px;
+    /* height: 3500px; */
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
@@ -21,6 +21,9 @@ body {
     margin-left: 10px;
 }
 
+.container {
+    padding-bottom: 15px;
+}
 
 #carouselExampleIndicators {
    margin-top: 50px;

@@ -10,9 +10,7 @@
     font-size: 16px;
 }
 
-.ake {
-    margin-left: 100px;
-}
+
 
 .jumbotron {
     width: 100%;
@@ -26,4 +24,13 @@
 
 .table {
     margin-top: 20px;
+}
+
+#am {
+    margin-left: 335px;
+    width: 70px;
+}
+
+#h2o {
+    margin: 0px 5px 0px 40px; 
 }

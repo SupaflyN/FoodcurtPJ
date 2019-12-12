@@ -36,6 +36,7 @@ import { Food13Component } from './food13/food13.component';
 
 
 const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent}, //หน้าแรก
   {path: 'foodcurt' , component: FoodcurtComponent},
   {path: 'food1' , component: Food1Component},
