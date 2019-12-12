@@ -1,1 +1,50 @@
-<p>food5 works!</p>
+<div class="jumbotron bg-white">
+        <div *ngFor="let foodcurt of foodcurt$ | async" >
+            <div class="shadow p-3 mb-3 bg-dark text-white rounded" style="text-align: center;"><h1>{{foodcurt.name}}</h1></div>
+        
+        <p  style="text-align: center;"> {{foodcurt.description}}</p>
+        <img src= "{{foodcurt.ImagePath}} "class="center rounded " width="600" height="300"  alt="...">
+        
+        <table class="table ">
+            <thead class="thead-dark">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">อาหาร</th>
+                    <th scope="col">ราคา</th>  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="text">{{foodcurt.namefood[0]}}</td>
+                    <td>{{foodcurt.pricefood[0]}} บาท</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>{{foodcurt.namefood[1]}}</td>
+                    <td>{{foodcurt.pricefood[1]}} บาท</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>{{foodcurt.namefood[2]}}</td>
+                    <td>{{foodcurt.pricefood[2]}} บาท</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">4</th>
+                      <td>{{foodcurt.namefood[3]}}</td>
+                      <td>{{foodcurt.pricefood[3]}} บาท</td>
+                    </tr>
+                  <tr>
+                      <th scope="row">5</th>
+                      <td>{{foodcurt.namefood[4]}}</td>
+                      <td>{{foodcurt.pricefood[4]}} บาท</td>
+                    </tr>   
+                  <tr>
+                      <th scope="row">6</th>
+                      <td>{{foodcurt.namefood[5]}}</td>
+                      <td>{{foodcurt.pricefood[5]}} บาท</td>
+                    </tr>                   
+                </tbody>
+              </table>
+        </div>
+        </div>

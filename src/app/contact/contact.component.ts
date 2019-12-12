@@ -9,6 +9,7 @@ import { Foodcurt } from '../foodcurt';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  
   contactRef: AngularFirestoreCollection<Foodcurt>;
   contact$: Observable<Foodcurt[]>;
   constructor(private afs: AngularFirestore) { 

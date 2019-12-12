@@ -1,17 +1,18 @@
 body {
-    background-image: url(https://media.discordapp.net/attachments/563331155064127490/653958907332526129/unknown.png); 
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/foodcourtssru.appspot.com/o/img%2Fwallpaper.jpg?alt=media&token=239f1def-a2c5-4805-b1e9-e43faefc544c); 
     height: 3500px;
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
     background-size:  cover;
+    
   }
 
 
 .card {
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
 }
 
 
@@ -20,4 +21,8 @@ body {
     margin-left: 10px;
 }
 
+
+#carouselExampleIndicators {
+   margin-top: 50px;
+}
 

@@ -1,14 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-
-import { AngularFireModule} from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
+
+//Rounter
+import { Routes, RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+//Component
+import { HomeComponent } from './home/home.component';
 import { Food1Component } from './food1/food1.component';
 import { Food2Component } from './food2/food2.component';
 import { Food3Component } from './food3/food3.component';
@@ -23,7 +23,11 @@ import { FoodcurtComponent } from './foodcurt/foodcurt.component';
 import { HowtoComponent } from './howto/howto.component';
 import { ContactComponent } from './contact/contact.component';
 import { MapComponent } from './map/map.component';
-
+import { HistoryComponent } from './history/history.component';
+//Firebase
+import { AngularFireModule} from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { Food11Component } from './food11/food11.component';
 
 
 const appRoutes: Routes = [
@@ -41,7 +45,9 @@ const appRoutes: Routes = [
   {path: 'food10' , component: Food10Component},
   {path: 'howto' , component: HowtoComponent},
   {path: 'contact' , component: ContactComponent},
-  {path: 'map' , component: MapComponent}
+  {path: 'map' , component: MapComponent},
+  {path: 'history' , component: HistoryComponent}
+
   
 ];
 
@@ -62,7 +68,9 @@ const appRoutes: Routes = [
     FoodcurtComponent,
     HowtoComponent,
     ContactComponent,
-    MapComponent
+    MapComponent,
+    HistoryComponent,
+    Food11Component
   ],
   imports: [
     BrowserModule,

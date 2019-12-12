@@ -1,6 +1,6 @@
 <div class="jumbotron" > 
 <h1 class="mt-5" style="text-align: center;">ร้านอาหารในโรงอาหาร</h1>
-<p class="lead">ท่านสามารถเลือกร้านอาหารในโรงอาหารได้ และ กดปุ่ม ดูรายละเอียด เพื่อเช็คข้อมูลของร้านค้า</p>
+<p  style="text-align: center;">ท่านสามารถเลือกร้านอาหารในโรงอาหารได้ และ กดปุ่ม ดูรายละเอียด เพื่อเช็คข้อมูลของร้านค้า</p>
 <div class="col-sm-12">
   <div class="row">
       <div *ngFor="let foodcurt of foodcurt$ | async "  class="card" style="width: 18rem;" >
@@ -8,7 +8,7 @@
             <div class="card-body">
               <h5 class="card-title">{{foodcurt.name}}</h5>
               <p class="card-text"> {{foodcurt.description}}</p>
-              <button routerLink = "{{foodcurt.link}}" class="btn btn-primary">กดเพื่อดูรายละเอียด</button>
+              <button routerLink = "{{foodcurt.link}}" class="btn btn-warning">กดเพื่อดูรายละเอียด</button>
          </div>
      </div>
   </div>
